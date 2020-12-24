@@ -1,3 +1,5 @@
+import { addZero } from './supScript.js';
+
 export const videoPlayerInit = () => {
   // video-player
   // video-button__play
@@ -37,7 +39,7 @@ export const videoPlayerInit = () => {
     videoPlayer.currentTime = 0;
   }
 
-  const addZero = n => n < 10 ? '0' + n : n;
+ 
   
   videoPlayer.addEventListener('click', togglePlay);
   videoButtonPlay.addEventListener('click', togglePlay);
@@ -66,5 +68,7 @@ export const videoPlayerInit = () => {
 
     videoPlayer.currentTime = (value * duration) / 100;
   })
+
+  
 
 };
